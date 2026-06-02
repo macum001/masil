@@ -1,0 +1,55 @@
+{
+  "name": "User",
+  "type": "object",
+  "properties": {
+    "role": {
+      "type": "string",
+      "enum": [
+        "admin",
+        "user"
+      ],
+      "default": "user"
+    },
+    "nickname": {
+      "type": "string",
+      "description": "\ub2c9\ub124\uc784"
+    },
+    "phone": {
+      "type": "string",
+      "description": "\ud734\ub300\ud3f0 \ubc88\ud638"
+    },
+    "phone_verified": {
+      "type": "boolean",
+      "default": false,
+      "description": "\ud734\ub300\ud3f0 \uc778\uc99d \uc5ec\ubd80"
+    },
+    "apartment_id": {
+      "type": "string",
+      "description": "\uc18c\uc18d \uc544\ud30c\ud2b8 ID"
+    },
+    "apartment_name": {
+      "type": "string",
+      "description": "\uc18c\uc18d \uc544\ud30c\ud2b8 \uc774\ub984 (\uce90\uc2dc)"
+    },
+    "gps_verified": {
+      "type": "boolean",
+      "default": false,
+      "description": "GPS \uc778\uc99d \uc5ec\ubd80"
+    },
+    "verification_status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "approved",
+        "rejected"
+      ],
+      "default": "pending",
+      "description": "\uc778\uc99d \uc0c1\ud0dc"
+    },
+    "card_issued_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "\ub2e8\uc9c0 \uce74\ub4dc \ubc1c\uae09 \uc2dc\uac01"
+    }
+  }
+}
