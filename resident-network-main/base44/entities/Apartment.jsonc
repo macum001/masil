@@ -1,0 +1,40 @@
+{
+  "name": "Apartment",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "\uc544\ud30c\ud2b8 \uc774\ub984"
+    },
+    "address": {
+      "type": "string",
+      "description": "\uc544\ud30c\ud2b8 \uc8fc\uc18c"
+    },
+    "household_count": {
+      "type": "number",
+      "description": "\uc138\ub300 \uc218"
+    },
+    "lat": {
+      "type": "number",
+      "description": "\uc704\ub3c4"
+    },
+    "lng": {
+      "type": "number",
+      "description": "\uacbd\ub3c4"
+    },
+    "dong": {
+      "type": "string",
+      "description": "\ud589\uc815\ub3d9"
+    },
+    "sigungu": {
+      "type": "string",
+      "description": "\uc2dc\uad70\uad6c"
+    }
+  },
+  "required": [
+    "name",
+    "address",
+    "lat",
+    "lng"
+  ]
+}
